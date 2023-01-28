@@ -108,14 +108,15 @@ Window {
             anchors.bottom: lv.top
             anchors.margins: 10
             spacing: 2
-            Rectangle {color: "red"; width: parent.width/2; height: 30
+            Rectangle {color: "red"; width: parent.width/4; height: 30
                 Text {
                     id: oldT
                     anchors.horizontalCenter: parent.horizontalCenter
                     text: "Old Task: " + taskList.oldT
                 }
             }
-            Rectangle {color: "blue"; width: parent.width/2; height: 30
+            Rectangle {color: "blue"; width: parent.width/4; height: 30
+                anchors.right: parent.right
                 Text {
                     id: newT
                     anchors.horizontalCenter: parent.horizontalCenter

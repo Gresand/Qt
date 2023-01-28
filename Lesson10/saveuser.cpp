@@ -46,8 +46,9 @@ void saveUser::setTask(QString Task)
 {
     flagChange = true;
     newData += Task + "\n";
-    listData= newData.split("\n");
+    dataLoad += Task + "\n";
+    listData= dataLoad.split("\n");
     listData.removeAll(QString(""));
-    newT = listData.size();
+    newT += 1;
     emit modelChanged();
 }
